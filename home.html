@@ -16,8 +16,9 @@
   <link rel="stylesheet" href="./styles/footer.css">
 </head>
 <body>
+
   <nav class="navBar">
-    <button class="hambugerMenu">
+    <button class="hambugerMenu"  id="hamburgerMenu">
       <img class="hambugerMenuImg" src="./assets/navbar/Icon - Menu.png">
     </button>
     <ul class="navbarList">
@@ -90,109 +91,9 @@
       <h3 class="director">
         Musicians
       </h3>
-      <div class="cardsDiv">
-        <article class="musicianCard">
-          <div>
-            <img class="musicianImg" src="./assets/musicians/fotomaestro.jpg">
-          </div>
-          <div class="musicianIngoDiv">
-            <h5 class="musicianName">
-              Yochai Benkler
-            </h5>
-            <div class="musicianDescriptionDiv">
-              <p class="musicianCurriculum">
-                Berkman Professor of Entrepreneurial Legal Studies at 
-                Harvard Law School
-              </p>
-              <p class="musicianDescription">
-                Benkler studies common-based peer production, and published 
-                his eminal book The Wealth of Networks in 2006
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="musicianCard">
-          <div>
-            <img class="musicianImg" src="./assets/musicians/fotomaestro.jpg">
-          </div>
-          <div class="musicianIngoDiv">
-            <h5 class="musicianName">
-              Yochai Benkler
-            </h5>
-            <div class="musicianDescriptionDiv">
-              <p class="musicianCurriculum">
-                Berkman Professor of Entrepreneurial Legal Studies at 
-                Harvard Law School
-              </p>
-              <p class="musicianDescription">
-                Benkler studies common-based peer production, and published 
-                his eminal book The Wealth of Networks in 2006
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="musicianCard">
-          <div>
-            <img class="musicianImg" src="./assets/musicians/fotomaestro.jpg">
-          </div>
-          <div class="musicianIngoDiv">
-            <h5 class="musicianName">
-              Yochai Benkler
-            </h5>
-            <div class="musicianDescriptionDiv">
-              <p class="musicianCurriculum">
-                Berkman Professor of Entrepreneurial Legal Studies at 
-                Harvard Law School
-              </p>
-              <p class="musicianDescription">
-                Benkler studies common-based peer production, and published 
-                his eminal book The Wealth of Networks in 2006
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="musicianCard">
-          <div>
-            <img class="musicianImg" src="./assets/musicians/fotomaestro.jpg">
-          </div>
-          <div class="musicianIngoDiv">
-            <h5 class="musicianName">
-              Yochai Benkler
-            </h5>
-            <div class="musicianDescriptionDiv">
-              <p class="musicianCurriculum">
-                Berkman Professor of Entrepreneurial Legal Studies at 
-                Harvard Law School
-              </p>
-              <p class="musicianDescription">
-                Benkler studies common-based peer production, and published 
-                his eminal book The Wealth of Networks in 2006
-              </p>
-            </div>
-          </div>
-        </article>
-        <article class="musicianCard">
-          <div>
-            <img class="musicianImg" src="./assets/musicians/fotomaestro.jpg">
-          </div>
-          <div class="musicianIngoDiv">
-            <h5 class="musicianName">
-              Yochai Benkler
-            </h5>
-            <div class="musicianDescriptionDiv">
-              <p class="musicianCurriculum">
-                Berkman Professor of Entrepreneurial Legal Studies at 
-                Harvard Law School
-              </p>
-              <p class="musicianDescription">
-                Benkler studies common-based peer production, and published 
-                his eminal book The Wealth of Networks in 2006
-              </p>
-            </div>
-          </div>
-        </article>
+      <div class="cardsDiv" id="musiciansCardsGroup">
       </div>
-      <button class="moreBtn">
+      <button class="moreBtn" id="moreCardsBtn">
         MORE
         <img class="redArrow" src="./assets/footer/redArrow2.png">
       </button>
@@ -217,5 +118,7 @@
       </article>
     </footer>
   </main>
+  <script src="./scripts/mobileMenu.js"></script>
+  <script src="./scripts/musicians.js"></script>
 </body>
 </html>
