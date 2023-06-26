@@ -1,28 +1,24 @@
-.footerSection {
+.sponsors {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(61, 59, 59);
+  color: white;
+  font-size: 20px;
+  height: 200px;
+}
+
+.sponsorList {
+  list-style: none;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  color: white;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.rigths {
   background-color: white;
-  padding-bottom: 30px; 
-}
-
-.moreBtn {
-  width: 90%;
-  max-width: 380px;
-  height: 40px;
-  background-color: white;
-  border: 2px solid;
-  border-color: rgb(192, 191, 191);
-  border-radius: 6px;
-  font-weight: bold;
-  transition: 0.1s;
-}
-
-.moreBtn:active {
-  background-color: rgb(168, 168, 168);
-  border-color: rgb(168, 168, 168);
-}
-
-.redArrow {
-  width: 10px;
+  height: 200px;
 }

@@ -1,11 +1,12 @@
 .headline {
   width: 100%;
   margin: auto;
-  background-color: rgb(241, 231, 212);
+  background-color: rgba(241, 231, 212);
   background-size: contain;
   display: flex;
   flex-direction: row;
   justify-content: center;
+  padding-top: 20px;
 }
 
 .headlineDiv {
@@ -19,6 +20,7 @@
 .pageTitle {
   font-size: 28px;
   color: black;
+  padding-bottom: 10px;
 }
 
 .titleDescription {
@@ -26,13 +28,39 @@
   border-color: white;
   padding: 10px;
   margin-top: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  max-width: 680px;
 }
 
 .dateOfConcert {
-
+  margin-bottom: 10px;
 }
 
 .places {
   padding-bottom: 70px;
+}
+
+@media only screen and (min-width: 768px) {
+  .headlineDiv {
+    width: 80%;
+  }
+  .miniTitle {
+    font-size: 30px;
+  }
+
+  .pageTitle {
+    font-size: 70px;
+  }
+
+  .titleDescription {
+    font-size: 18px;
+  }
+
+  .dateOfConcert {
+    font-size: 40px;
+  }
+
+  .places {
+    font-size: 18px;
+  }
 }

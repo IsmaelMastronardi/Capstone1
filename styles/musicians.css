@@ -13,6 +13,14 @@
   padding-bottom: 10px;
 }
 
+.cardsDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  justify-content: space-around;
+}
+
 .musicianCard {
   display: flex;
   flex-direction: row;
@@ -51,6 +59,30 @@
 }
 
 .musicianDescription {
-font-size: 12px;
+  font-size: 12px;
 }
 
+.moreBtn {
+  width: 90%;
+  max-width: 380px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid;
+  border-color: rgb(192, 191, 191);
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+.moreBtn:active {
+  background-color: rgb(168, 168, 168);
+  border-color: rgb(168, 168, 168);
+}
+
+.redArrow {
+  width: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+
+}
