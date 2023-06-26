@@ -1,0 +1,24 @@
+body {
+  height: 1500px;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  background-color: rgb(230, 226, 226);
+
+}
+
+main {
+  margin-top: 71px;
+}
+
+button {
+  font-family: 'Lato', sans-serif;
+}
+
+h5,
+h4,
+h3,
+h2,
+h1,
+p {
+  margin: 0;
+}

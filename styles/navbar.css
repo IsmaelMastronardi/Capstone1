@@ -1,0 +1,21 @@
+.navBar {
+  border: 1px solid;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+}
+
+.hambugerMenu {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.hambugerMenuImg {
+  height: 40px;
+  width: 40px;
+}
