@@ -1,0 +1,26 @@
+.pastConcerts {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-top: 2px solid rgb(223, 222, 222);
+  padding-top: 40px;
+  padding-bottom: 50px;
+  gap: 30px;
+}
+
+.pastConcertTitle {
+  font-size: 26px;
+}
+
+.pastConcertDescription {
+  font-size: 18px;
+  color: rgb(107, 107, 107);
+}
+
+.pastConcertsImg {
+  width: 80%;
+  max-width: 455px;
+}

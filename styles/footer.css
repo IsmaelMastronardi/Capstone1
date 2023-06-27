@@ -3,22 +3,92 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: rgb(61, 59, 59);
+  background-color: rgb(63, 63, 68);
   color: white;
   font-size: 20px;
   height: 200px;
+  width: 100%;
 }
 
 .sponsorList {
   list-style: none;
   display: flex;
   flex-direction: row;
-  color: white;
+  justify-content: center;
+  gap: 20px;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.sponsorTitle {
+  color: rgb(153, 153, 153);
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.sponsorIcons {
+  width: 120px;
+}
+
+.sponsorIconsAbout {
+  width: 90%;
+  max-width: 120px;
+}
+
+.iconMargin {
+  margin-bottom: -24px;
+}
+
+.iconSize {
+  width: 140px;
+}
+
+.license {
+  display: flex;
+  flex-direction: row;
   justify-content: space-evenly;
-  width: 100%;
+  background-color: rgb(235, 235, 235);
+  align-items: center;
+  height: 200px;
+}
+
+.orchestraIconFooter {
+  width: 100px;
 }
 
 .rigths {
-  background-color: white;
-  height: 200px;
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.rigthsDesktop {
+  display: none;
+}
+
+.homeFooter {
+  display: none;
+}
+
+.rigthsDescription {
+  line-height: 40px;
+}
+
+@media only screen and (min-width: 768px) {
+  .homeFooter {
+    display: initial;
+  }
+
+  .sponsorList {
+    gap: 40px;
+  }
+
+  .rigthsDesktop {
+    display: initial;
+  }
+
+  .rigthsBreakMobile {
+    display: none;
+  }
 }

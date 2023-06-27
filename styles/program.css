@@ -1,7 +1,5 @@
 .program {
-  background-color: rgb(49, 47, 47);
-  background-image: url(../assets/program/backgroundBigNote.webp);
-  background-size: contain;
+  background: url(../assets/program/pattern.png), #282b32;
   color: white;
   display: flex;
   flex-direction: column;
@@ -15,7 +13,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: black;
+  color: white;
   font-size: 36px;
   font-weight: bold;
 }
@@ -25,16 +23,13 @@
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background: linear-gradient(to right, rgba(23, 21, 21, 0.8), rgba(61, 58, 53, 0.5));
+  background-color: rgba(80, 79, 79, 0.5);
   height: 100px;
   width: 95%;
   max-width: 605px;
   gap: 15px;
   border-radius: 4px;
-}
-
-.music:hover {
-  background: linear-gradient(to right, rgba(23, 21, 21, 0.9), rgba(61, 58, 53, 0.7));
+  border: 4px solid transparent;
 }
 
 .violinIcon {
@@ -72,19 +67,26 @@
 
 @media only screen and (min-width: 768px) {
   .program {
-    background-image: url(../assets/program/backgroundBigNoteMirror.png);
-    background-size: cover;
   }
 
   .music {
     flex-direction: column;
-    height: 200px;
-    width: 200px;
+    height: 240px;
+    width: 250px;
+  }
+
+  .music:hover {
+    border: 4px solid white;
   }
 
   .musicDiv {
     flex-direction: row;
     text-align: center;
     justify-content: center;
+  }
+
+  .concertDescription {
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
