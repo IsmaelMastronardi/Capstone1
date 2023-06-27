@@ -20,3 +20,7 @@ h1,
 p {
   margin: 0;
 }
+
+.greyBackground {
+  background-color: rgb(241, 241, 241);
+}

@@ -62,8 +62,29 @@
   margin-bottom: 30px;
 }
 
+.musicDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 95%;
+  align-items: center;
+}
+
 @media only screen and (min-width: 768px) {
   .program {
     background-image: url(../assets/program/backgroundBigNoteMirror.png);
+    background-size: cover;
+  }
+
+  .music {
+    flex-direction: column;
+    height: 200px;
+    width: 200px;
+  }
+
+  .musicDiv {
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
   }
 }
