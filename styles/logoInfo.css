@@ -32,3 +32,18 @@
 .logoInfoLogo {
   width: 200px;
 }
+
+.logoDescriptionTextDesktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .logoDescriptionText {
+    display: none;
+  }
+
+  .logoDescriptionTextDesktop {
+    display: inherit;
+    line-height: 25px;
+  }
+}

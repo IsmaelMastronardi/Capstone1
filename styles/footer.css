@@ -6,7 +6,7 @@
   background-color: rgb(63, 63, 68);
   color: white;
   font-size: 20px;
-  height: 200px;
+  height: 230px;
   width: 100%;
 }
 
@@ -90,5 +90,18 @@
 
   .rigthsBreakMobile {
     display: none;
+  }
+
+  .aboutDisplay {
+    display: none;
+  }
+
+  .aboutLicense {
+    background-color: rgb(41, 41, 41);
+  }
+
+  .aboutRigths {
+    color: rgb(184, 184, 184);
+    font-weight: bold;
   }
 }

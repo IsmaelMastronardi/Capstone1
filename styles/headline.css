@@ -44,6 +44,9 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  background-image: url(../assets/Headline/backgroundDesingAbout.png);
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .headlineDivAbout {
@@ -59,12 +62,12 @@
 }
 
 .pageTitleAbout {
-  font-size: 32px;
+  font-size: 34px;
   color: orangered;
 }
 
 .aboutDescription {
-  border: 1px solid;
+  border: 2px solid rgb(222, 222, 222);
   text-align: center;
   max-width: 375px;
   background-color: white;
@@ -74,6 +77,10 @@
   margin-bottom: 20px;
   line-height: 30px;
   font-weight: bold;
+}
+
+.aboutDescriptionDesktop {
+  display: none;
 }
 
 .conctactInfo {
@@ -112,6 +119,42 @@
   }
 
   .places {
+    font-size: 18px;
+  }
+
+  .aboutDescription {
+    display: none;
+  }
+
+  .smallTitle {
+    display: none;
+  }
+
+  .pageTitleAbout {
+    font-size: 60px;
+    margin-top: 100px;
+  }
+
+  .aboutDescriptionDesktop {
+    display: initial;
+    text-align: center;
+    border: 3px solid rgb(224, 224, 224);
+    padding: 35px;
+    background-color: white;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 26px;
+  }
+
+  .breakMobile {
+    display: none;
+  }
+
+  .conctactInfo {
+    font-size: 18px;
+  }
+
+  .email {
     font-size: 18px;
   }
 }
