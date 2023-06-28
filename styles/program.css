@@ -84,7 +84,9 @@
   .music {
     flex-direction: column;
     height: 240px;
+    min-width: 0;
     width: 250px;
+    
   }
 
   .music:hover {

@@ -8,7 +8,6 @@ function deleteMenu() {
 function createMenu() {
   const mobileNabvar = document.createElement('div');
   mobileNabvar.classList.add('mobileNabvar');
-  mobileNabvar.id = 'mobileNabvar';
   mobileNabvar.innerHTML = `
   <button class="mobileMenuExit" id="mobileMenuBtn">X</button>
   <ul class="mobileNabvarList">
