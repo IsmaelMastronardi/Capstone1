@@ -69,9 +69,7 @@
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
-Home page: 
 - [https://ismaelmastronardi.github.io/Capstone1/]
-About page:
 - [https://ismaelmastronardi.github.io/Capstone1/about]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
