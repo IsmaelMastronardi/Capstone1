@@ -54,6 +54,8 @@
 
 .orchestraIconFooter {
   width: 100px;
+  margin-right: 10px;
+  margin-left: 10px;
 }
 
 .rigths {
@@ -61,6 +63,8 @@
   display: flex;
   flex-direction: column;
   gap: 14px;
+  font-weight: bold;
+  color: rgb(124, 124, 124);
 }
 
 .rigthsDesktop {
