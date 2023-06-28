@@ -55,7 +55,7 @@ const concerts = [{
 {
   icon: './assets/program/whiteNoteIcon.png',
   title: 'C Major, Op. 56 <span class="noDisplayMobile">Ludwig van<span/> Beethoven',
-  description: 'This piece is a variation of the aforementioned "Triple Concerto,", a fourth soloist is added in the ensemble.',
+  description: 'This piece is a variation of the aforementioned "Triple Concerto", a fourth soloist is added in the ensemble.',
 },
 {
   icon: './assets/program/whiteNoteIcon.png',
