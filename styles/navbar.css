@@ -7,7 +7,6 @@
   background-color: white;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
   z-index: 8;
 }
 
@@ -77,6 +76,14 @@
   font-weight: bold;
 }
 
+.mobileNabvarListItem:visited,
+.mobileNabvarListItem:active,
+.mobileNabvarListItem:hover,
+.mobileNabvarListItem:link {
+  text-decoration: none;
+  color: black;
+}
+
 .mobileMenuExit {
   width: 40px;
   height: 40px;
@@ -91,8 +98,8 @@
 }
 
 @media only screen and (min-width: 768px) {
-  .navbar {
-    justify-content: center;
+  .navBar {
+    justify-content: space-evenly;
   }
 
   .hambugerMenu {

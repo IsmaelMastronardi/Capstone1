@@ -12,9 +12,9 @@ function createMenu() {
   mobileNabvar.innerHTML = `
   <button class="mobileMenuExit" id="mobileMenuBtn">X</button>
   <ul class="mobileNabvarList">
-    <li><a class="mobileNabvarListItem" id="mobileMenuLinkA" href="#sectionLink1">Program</a></li>
-    <li><a class="mobileNabvarListItem" id="mobileMenuLinkB" href="#sectionLink2">Musicians</a></li>
-    <li><a class="mobileNabvarListItem" id="mobileMenuLinkB" href="./about.html">About</a></li>
+    <li><a class="mobileNabvarListItem" id="mobileMenuLinkA" href="#sectionLink1">Logo Info</a></li>
+    <li><a class="mobileNabvarListItem" id="mobileMenuLinkB" href="#sectionLink2">Past Concerts</a></li>
+    <li><a class="mobileNabvarListItem" id="mobileMenuLinkB" href="./index.html">Home</a></li>
   </ul>
   `;
   document.body.appendChild(mobileNabvar);

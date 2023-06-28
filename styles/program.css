@@ -9,13 +9,13 @@
 }
 
 .programSectionTitle {
-  height: 120px;
+  height: 100px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   color: white;
   font-size: 36px;
   font-weight: bold;
+  padding-top: 60px;
 }
 
 .music {

@@ -75,7 +75,7 @@ function createMusicianCard(artist) {
   musicianCard.classList.add('musicianCard');
   musicianCard.innerHTML = `
   <div>
-  <img class="musicianImg" src="${artist.image}">
+  <img class="musicianImg" src="${artist.image}" alt="${artist.name} profile">
 </div>
 <div class="musicianIngoDiv">
   <h5 class="musicianName">
@@ -102,7 +102,7 @@ function createMusicCard(concert) {
   const concertArticle = document.createElement('article');
   concertArticle.classList.add('music');
   concertArticle.innerHTML = `
-  <img class="concertIcon" src="${concert.icon}">
+  <img class="concertIcon" src="${concert.icon}" alt="">
   <h4 class="concertName">${concert.title}</h4>
   <p class="concertDescription">${concert.description}</p>
   `;
