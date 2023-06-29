@@ -157,3 +157,26 @@
     display: flex;
   }
 }
+
+@keyframes append-animate {
+  from {
+    opacity: 0;
+    margin-right: 100%;
+    margin-bottom: 100%;
+  }
+
+  to {
+    opacity: 1;
+    margin-right: 0%;
+    margin-bottom: 0%;
+  }
+}
+
+.mobileAnimation {
+  animation: append-animate 0.2s linear;
+}
+
+.mobileAnimationReverse {
+  animation: append-animate 0.2s linear;
+  animation-direction: reverse;
+}

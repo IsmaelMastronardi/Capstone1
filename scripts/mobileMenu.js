@@ -1,13 +1,17 @@
 const hamburgerMenu = document.querySelector('#hamburgerMenu');
 function deleteMenu() {
   const mobileNabvar = document.querySelector('.mobileNabvar');
-  mobileNabvar.remove();
+  mobileNabvar.classList.remove('mobileAnimation');
+  mobileNabvar.classList.add('mobileAnimationReverse');
+  mobileNabvar.addEventListener('animationend', () => {
+    mobileNabvar.remove();
+  });
   document.body.style.overflow = 'auto';
 }
 
 function createMenu() {
   const mobileNabvar = document.createElement('div');
-  mobileNabvar.classList.add('mobileNabvar');
+  mobileNabvar.classList.add('mobileNabvar', 'mobileAnimation');
   mobileNabvar.innerHTML = `
   <button class="mobileMenuExit" id="mobileMenuBtn">X</button>
   <ul class="mobileNabvarList">
@@ -24,5 +28,8 @@ function createMenu() {
   listItem.addEventListener('click', deleteMenu);
   const listItem2 = document.querySelector('#mobileMenuLinkB');
   listItem2.addEventListener('click', deleteMenu);
+  mobileNabvar.addEventListener('animationend', ()=>{
+    mobileNabvar.classList.remove('mobileAnimation');
+  });
 }
 hamburgerMenu.addEventListener('click', createMenu);
