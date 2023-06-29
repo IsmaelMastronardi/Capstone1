@@ -30,8 +30,7 @@
   justify-content: space-around;
   background-color: rgba(80, 79, 79, 0.5);
   height: 100px;
-  width: 90%;
-  min-width: 355px;
+  width: 99%;
   max-width: 605px;
   gap: 15px;
   border-radius: 4px;
@@ -39,17 +38,20 @@
 }
 
 .concertIcon {
-  height: 50px;
-  display: none;
+  height: calc(30px + 1vw);
+  max-height: 50px;
 }
 
 .concertName {
   color: orangered;
   font-size: 22px;
+  font-size: calc(10px + 1vw);
+  min-width: 13%;
 }
 
 .concertDescription {
   max-width: 250px;
+  font-size: calc(10px + 1vw);
 }
 
 .joinConcertBtn {
@@ -100,9 +102,14 @@
     flex-wrap: wrap;
   }
 
+  .concertName {
+    font-size: 20px;
+  }
+
   .concertDescription {
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 16px;
   }
 
   .noDisplayMobile {
