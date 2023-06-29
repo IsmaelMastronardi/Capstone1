@@ -20,10 +20,23 @@
   flex-wrap: wrap;
 }
 
+.sponsorTitleDiv {
+  display: flex;
+  flex-direction: column;
+}
+
 .sponsorTitle {
   color: rgb(153, 153, 153);
   font-weight: bold;
   font-size: 24px;
+}
+
+.partnerBar {
+  padding-top: 10px;
+  height: 2px;
+  width: 50px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .sponsorIcons {
