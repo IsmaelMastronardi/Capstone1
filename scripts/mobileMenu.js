@@ -28,7 +28,7 @@ function createMenu() {
   listItem.addEventListener('click', deleteMenu);
   const listItem2 = document.querySelector('#mobileMenuLinkB');
   listItem2.addEventListener('click', deleteMenu);
-  mobileNabvar.addEventListener('animationend', ()=>{
+  mobileNabvar.addEventListener('animationend', () => {
     mobileNabvar.classList.remove('mobileAnimation');
   });
 }
