@@ -1,0 +1,56 @@
+.logoInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 30px;
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 36px;
+}
+
+.logoDescription {
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.logoDescriptionTitle {
+  font-size: 30px;
+}
+
+.logoTitleUnderline {
+  width: 40px;
+  height: 2px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.logoDescriptionText {
+  font-size: 18px;
+}
+
+.logoDiv {
+  padding: 10px;
+}
+
+.logoInfoLogo {
+  width: 200px;
+}
+
+.logoDescriptionTextDesktop {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .logoDescriptionText {
+    display: none;
+  }
+
+  .logoDescriptionTextDesktop {
+    display: inherit;
+    line-height: 25px;
+  }
+}

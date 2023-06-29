@@ -1,0 +1,182 @@
+.navBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  display: flex;
+  flex-direction: row;
+  z-index: 8;
+  background-color: white;
+}
+
+.hambugerMenu {
+  border: none;
+  background-color: transparent;
+  margin-left: 10px;
+}
+
+.hambugerMenuImg {
+  height: 40px;
+  width: 40px;
+}
+
+.socialMediaDiv {
+  background-color: rgb(41, 41, 41);
+  height: 30px;
+  display: none;
+  flex-direction: row;
+  justify-content: end;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+
+.socialMediaList {
+  width: 50%;
+  list-style: none;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+}
+
+.socialMediaItem {
+  margin-top: -10px;
+  font-weight: bold;
+}
+
+.navbarList {
+  list-style: none;
+  display: none;
+  gap: 40px;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+
+.navbarFirst {
+  width: 30%;
+}
+
+.lastItem {
+  white-space: nowrap;
+  border: 5px solid orangered;
+  padding: 10px;
+  color: orangered;
+}
+
+.navbarLink:link,
+.navbarLink:active,
+.navbarLink:hover,
+.navbarLink:visited {
+  color: inherit;
+  text-decoration: none;
+}
+
+.mobileNabvar {
+  background: url(../assets/program/pattern.png), #282b32;
+  background-repeat: repeat;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding-left: 20px;
+  padding-top: 40px;
+}
+
+.mobileNabvarList {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.mobileNabvarListItem {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.mobileNabvarListItem:visited,
+.mobileNabvarListItem:active,
+.mobileNabvarListItem:hover,
+.mobileNabvarListItem:link {
+  text-decoration: none;
+  color: white;
+}
+
+.mobileMenuExit {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 0;
+  top: 0;
+  margin-top: 10px;
+  margin-right: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: orangered;
+}
+
+@media only screen and (min-width: 768px) {
+  .navBar {
+    justify-content: space-evenly;
+    height: 90px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hambugerMenu {
+    display: none;
+  }
+
+  .orchestraIcon {
+    height: 50px;
+    margin-top: 5px;
+  }
+
+  .navbarList {
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 30px;
+  }
+
+  .socialMediaDiv {
+    display: flex;
+  }
+}
+
+@keyframes append-animate {
+  from {
+    opacity: 0;
+    margin-right: 100%;
+    margin-bottom: 100%;
+  }
+
+  to {
+    opacity: 1;
+    margin-right: 0%;
+    margin-bottom: 0%;
+  }
+}
+
+.mobileAnimation {
+  animation: append-animate 0.2s linear;
+}
+
+.mobileAnimationReverse {
+  animation: append-animate 0.2s linear;
+  animation-direction: reverse;
+}

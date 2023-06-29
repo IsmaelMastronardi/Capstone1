@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cordoba Spring Festival -home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" 
+    rel="stylesheet">
+  <link rel="stylesheet" href="./styles/navbar.css">
+  <link rel="stylesheet" href="./styles/general.css">
+  <link rel="stylesheet" href="./styles/headline.css">
+  <link rel="stylesheet" href="./styles/program.css">
+  <link rel="stylesheet" href="./styles/musicians.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+</head>
+<body>
+  <nav class="navBar">
+    <button class="hambugerMenu"  id="hamburgerMenu">
+      <img class="hambugerMenuImg" src="./assets/navbar/Icon - Menu.png" alt="menu">
+    </button>
+    <div class="socialMediaDiv">
+      <ul class="socialMediaList">
+        <li class="socialMediaItem" rel="noopener">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="./assets/navbar/facebookIcon.png" >
+          </a>
+        </li>
+        <li class="socialMediaItem" rel="noopener">
+          <a href="https://twitter.com/@IsmaMastronardi" target="_blank">
+            <img src="./assets/navbar/twitterIcon.png">
+          </a>
+        </li>
+        <li class="socialMediaItem">
+          <a>English
+          </a>
+        </li>
+        <li class="socialMediaItem">
+          <a>Español
+          </a>
+        </li>
+        <li class="socialMediaItem">
+          <a>Italiano
+          </a>
+        </li>
+      </ul>
+    </div>
+    <ul class="navbarList">
+      <li class="navbarListItem navbarFirst">
+        <a href="./index.html"><img class="orchestraIcon" src="./assets/navbar/orchestraIcon.jpg" alt="Cordoba Spring Festival 2023 Icon"></a> 
+      </li>
+      <li class="navbarListItem"><a class="navbarLink" href="./about.html">About</a></li>
+      <!--I believe this anchors should take the user to other pages, just like the about anchor above this comment does,
+      but for the purpose of this projects, does pages are not done yet. so the anchors are empty, to be compleated on a 
+      later date-->
+      <li class="navbarListItem"><a class="navbarLink">Program</a></li>
+      <li class="navbarListItem"><a class="navbarLink">Join</a></li>
+      <li class="navbarListItem"><a class="navbarLink">Sponsor</a></li>
+      <li class="navbarListItem"><a class="navbarLink">News</a></li>
+      <li class="navbarListItem lastItem"><a>Spring Festival</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section class="headline">
+      <div class="headlineDiv">
+        <p class="miniTitle">"Hello! Music World"</p>
+        <h1 class="pageTitle">
+          CORDOBA CLASICAL<br/> SPRING FESTIVAL <br/>2023
+        </h1>
+        <p class="titleDescription">
+          Immerse yourself in the melodies of Beethoven, Mozart, 
+          and Handel at the Cordoba Spring Festival.
+          Experience the beauty of classical music in a captivating setting.
+        </p>
+        <h2 class="dateOfConcert">
+          2023.7.7(FRI) ~ 8(SAT)
+        </h2>
+        <p class="places">
+          @ Cordoba Real Theater, Art Center Güemes and more
+        </p>
+      </div>
+    </section>
+    <section class="program" id="sectionLink1">
+      <h3 class="programSectionTitle">
+        Main Program
+      </h3>
+      <img src="./assets/program/titleBar.png" class="titleBar">
+      <div class="musicDiv" id="musicProgram">
+      </div>
+      <div>
+        <button class="joinConcertBtn">
+          Join Cordoba Clasical<br/> Spring Festival 2023
+        </button>
+        <a class="wholeProgrmaAnchor noDisplayMobile">SEE THE WHOLE PROGRAM</a>
+      </div>
+    </section>
+    <section class="featuredMusicians" id="sectionLink2">
+      <h3 class="director">
+        Musicians
+      </h3>
+      <img src="./assets/program/titleBar.png" class="partnerBar">
+      <div class="cardsDiv" id="musiciansCardsGroup">
+      </div>
+      <button class="moreBtn" id="moreCardsBtn">
+        MORE
+      </button>
+    </section>
+    <section class="noDisplayMobile">
+      <article class="sponsors">
+        <div class="sponsorTitleDiv">
+          <p class="sponsorTitle">Partner</p>
+          <img src="./assets/program/titleBar.png" class="partnerBar">
+        </div>
+        <ul class="sponsorList">
+          <li class="sponsorListItem"><img src="./assets/footer/mozillaIcon.png" class="sponsorIcons " alt="Mozilla Icon"></li>
+          <li class="sponsorListItem"><img src="./assets/footer/googleIcon.png" class="sponsorIcons iconMargin" alt="Google Icon"></li>
+          <li class="sponsorListItem"><img src="./assets/footer/naverIcon.png" class="sponsorIcons" alt="naver Icon"></li>
+          <li class="sponsorListItem"><img src="./assets/footer/daumkakaoIcon.png" class="sponsorIcons iconMargin" alt="daumkakao Icon"></li>
+          <li class="sponsorListItem"><img src="./assets/footer/airbnbIcon.png" class="sponsorIcons iconMargin iconSize" alt="airbnb Icon"></li>
+        </ul>
+      </article>
+    </section>
+    <footer class="homeFooter">
+      <article class="license">
+        <div class="rigthsIcon">
+          <img class="orchestraIconFooter" src="./assets/navbar/orchestraIcon.jpg" alt="Cordoba Spring Festival 2023 Icon">
+        </div>
+        <div class="rigths">
+          <p>2023 Cordoba Clasical Spring Festivals. Some Rigths Reserved</p>
+          <p>For more information, please visit cordobaclasicalfestival@gmail.cordoba.gob</p>
+        </div>
+      </article>
+    </footer>
+  </main>
+  <script src="./scripts/mobileMenu.js"></script>
+  <script src="./scripts/musicians.js"></script>
+</body>
+</html>

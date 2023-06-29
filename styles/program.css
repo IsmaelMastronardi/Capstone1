@@ -1,0 +1,135 @@
+.program {
+  background: url(../assets/program/pattern.png), #282b32;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.programSectionTitle {
+  height: 56px;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 36px;
+  font-weight: bold;
+  padding-top: 60px;
+}
+
+.titleBar {
+  padding-bottom: 60px;
+  height: 3px;
+}
+
+.music {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  background-color: rgba(80, 79, 79, 0.5);
+  height: 100px;
+  width: 99%;
+  max-width: 605px;
+  gap: 15px;
+  border-radius: 4px;
+  border: 4px solid transparent;
+}
+
+.concertIcon {
+  height: calc(30px + 1vw);
+  max-height: 50px;
+}
+
+.concertName {
+  color: orangered;
+  font-size: 22px;
+  font-size: calc(10px + 1vw);
+  min-width: 13%;
+}
+
+.concertDescription {
+  max-width: 250px;
+  font-size: calc(10px + 1vw);
+}
+
+.joinConcertBtn {
+  background-color: rgb(255, 102, 0);
+  border: none;
+  border-radius: 6px;
+  height: 90px;
+  width: 320px;
+  color: white;
+  font-size: 18px;
+  margin-top: 60px;
+  margin-bottom: 30px;
+  transition: 0.1s;
+}
+
+.joinConcertBtn:active {
+  background-color: rgb(247, 140, 101);
+}
+
+.musicDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 95%;
+  align-items: center;
+}
+
+.noDisplayMobile {
+  display: none;
+}
+
+@media only screen and (min-width: 768px) {
+  .music {
+    flex-direction: column;
+    height: 240px;
+    min-width: 0;
+    width: 250px;
+  }
+
+  .music:hover {
+    border: 4px solid white;
+  }
+
+  .musicDiv {
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .concertName {
+    font-size: 20px;
+  }
+
+  .concertDescription {
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 16px;
+  }
+
+  .noDisplayMobile {
+    display: inherit;
+  }
+
+  .joinConcertBtn {
+    display: none;
+  }
+
+  .wholeProgrmaAnchor {
+    font-size: 20px;
+    text-decoration: underline;
+    padding-top: 40px;
+    padding-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .concertIcon {
+    display: inherit;
+  }
+}

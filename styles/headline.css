@@ -1,0 +1,181 @@
+.headline {
+  width: 100%;
+  margin: auto;
+  background-image: url(../assets/Headline/backgroundDesign.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+.headlineDiv {
+  width: 95%;
+}
+
+.miniTitle {
+  color: orangered;
+}
+
+.pageTitle {
+  font-size: 28px;
+  color: orangered;
+  padding-bottom: 10px;
+}
+
+.titleDescription {
+  border: 3px solid;
+  border-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  max-width: 680px;
+  background-color: rgb(245, 245, 245);
+}
+
+.dateOfConcert {
+  margin-bottom: 10px;
+}
+
+.places {
+  padding-bottom: 70px;
+  font-weight: bold;
+  color: grey;
+}
+
+.headlineAbout {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-image: url(../assets/Headline/backgroundDesingAbout.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.headlineDivAbout {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 95%;
+}
+
+.smallTitle {
+  margin-bottom: 10px;
+}
+
+.pageTitleAbout {
+  font-size: 34px;
+  color: orangered;
+  text-align: center;
+}
+
+.aboutTitleUnderline {
+  padding-top: 20px;
+  width: 40px;
+  height: 2px;
+}
+
+.aboutDescription {
+  border: 2px solid rgb(222, 222, 222);
+  text-align: center;
+  max-width: 375px;
+  background-color: white;
+  color: rgb(124, 124, 124);
+  padding: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 30px;
+}
+
+.aboutDescriptionDesktop {
+  display: none;
+}
+
+.conctactInfo {
+  text-align: center;
+  font-size: 15px;
+  font-weight: bold;
+  color: rgb(124, 124, 124);
+  margin-bottom: 10px;
+}
+
+.email {
+  font-weight: bold;
+  padding-bottom: 40px;
+  text-decoration: underline;
+}
+
+@media only screen and (min-width: 768px) {
+  .headlineDiv {
+    width: 80%;
+    padding-top: 100px;
+  }
+
+  .miniTitle {
+    font-size: 30px;
+  }
+
+  .pageTitle {
+    font-size: 70px;
+  }
+
+  .titleDescription {
+    font-size: 18px;
+    border-width: 5px;
+    padding: 20px;
+    line-height: 28px;
+    font-weight: bold;
+    background-color: rgb(245, 245, 245);
+  }
+
+  .dateOfConcert {
+    font-size: 40px;
+  }
+
+  .places {
+    font-size: 18px;
+  }
+
+  .aboutDescription {
+    display: none;
+  }
+
+  .smallTitle {
+    display: none;
+  }
+
+  .pageTitleAbout {
+    font-size: 60px;
+    margin-top: 100px;
+    text-align: center;
+  }
+
+  .aboutDescriptionDesktop {
+    display: inherit;
+    text-align: center;
+    max-width: 800px;
+    border: 3px solid rgb(224, 224, 224);
+    padding: 35px;
+    background-color: white;
+    color: black;
+    font-weight: 500;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    line-height: 26px;
+    font-size: 18px;
+  }
+
+  .breakMobile {
+    display: none;
+  }
+
+  .conctactInfo {
+    font-size: 18px;
+  }
+
+  .email {
+    font-size: 18px;
+  }
+}

@@ -1,0 +1,105 @@
+.featuredMusicians {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.director {
+  font-size: 22px;
+  padding-bottom: 10px;
+}
+
+.cardsDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.musicianCard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: 150px;
+}
+
+.musicianImg {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.musicianIngoDiv {
+  max-width: 330px;
+}
+
+.musicianName {
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.musicianDescriptionDiv {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.musicianCurriculum {
+  font-size: 14px;
+  color: orangered;
+}
+
+.musicianDescription {
+  font-size: 12px;
+}
+
+.musicianCardMobileDisplay {
+  display: none;
+}
+
+.moreBtn {
+  width: 90%;
+  max-width: 380px;
+  height: 40px;
+  background-color: white;
+  border: 2px solid;
+  border-color: rgb(192, 191, 191);
+  border-radius: 6px;
+  font-weight: bold;
+  transition: 0.1s;
+}
+
+.moreBtn:active {
+  background-color: rgb(168, 168, 168);
+  border-color: rgb(168, 168, 168);
+}
+
+.redArrow {
+  width: 10px;
+}
+
+@media only screen and (min-width: 768px) {
+  .moreBtn {
+    display: none;
+  }
+
+  .musicianCardMobileDisplay {
+    display: inherit;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .cardsDiv {
+    gap: 0;
+    width: 90%;
+  }
+}
