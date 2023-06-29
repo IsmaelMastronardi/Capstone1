@@ -1,3 +1,41 @@
+const concerts = [{
+  icon: './assets/program/whiteNoteIcon.png',
+  title: 'Op. 56 <span class="noDisplayMobile">Ludwig van<span/> Beethoven',
+  description: 'this masterpiece showcases virtuosic interactions and dialogues between the three soloists and the orchestra',
+},
+{
+  icon: './assets/program/whiteNoteIcon.png',
+  title: 'Sinfonía K. 364 <span class="noDisplayMobile">Wolfgang Amadeus<span/> Mozart',
+  description: 'This symphony offers a beautiful balance between the violin and viola, with both soloists shining in virtuosic passages.',
+},
+{
+  icon: './assets/program/whiteNoteIcon.png',
+  title: 'C Major, Op. 56 <span class="noDisplayMobile">Ludwig van<span/> Beethoven',
+  description: 'This piece is a variation of the aforementioned "Triple Concerto", a fourth soloist is added in the ensemble.',
+},
+{
+  icon: './assets/program/whiteNoteIcon.png',
+  title: 'Op. 3, No. 2 <span class="noDisplayMobile" >George Frideric<span/> Handel',
+  description: 'A notable Baroque concerto featuring a dialogue between a group of soloists, two violins and a cello, and the string orchestra.',
+},
+{
+  icon: './assets/program/whiteNoteIcon.png',
+  title: 'Op. 92 <span class="noDisplayMobile">Ludwig van<span/> Beethoven.',
+  description: ' This dynamic and emotionally charged masterpiece showcases Beethoven\'s genius and enduring musical legacy.',
+},
+];
+function createMusicCard(concert) {
+  const musicProgram = document.querySelector('#musicProgram');
+  const concertArticle = document.createElement('article');
+  concertArticle.classList.add('music');
+  concertArticle.innerHTML = `
+  <img class="concertIcon" src="${concert.icon}" alt="">
+  <h4 class="concertName">${concert.title}</h4>
+  <p class="concertDescription">${concert.description}</p>
+  `;
+  musicProgram.appendChild(concertArticle);
+}
+window.onload = concerts.forEach(createMusicCard);
 const musicians = [{
   image: './assets/musicians/musician.png',
   name: 'Benjamin Ramirez',
@@ -41,34 +79,6 @@ const musicians = [{
   number: '6',
 },
 ];
-
-const concerts = [{
-  icon: './assets/program/whiteNoteIcon.png',
-  title: 'Op. 56 <span class="noDisplayMobile">Ludwig van<span/> Beethoven',
-  description: 'this masterpiece showcases virtuosic interactions and dialogues between the three soloists and the orchestra',
-},
-{
-  icon: './assets/program/whiteNoteIcon.png',
-  title: 'Sinfonía K. 364 <span class="noDisplayMobile">Wolfgang Amadeus<span/> Mozart',
-  description: 'This symphony offers a beautiful balance between the violin and viola, with both soloists shining in virtuosic passages.',
-},
-{
-  icon: './assets/program/whiteNoteIcon.png',
-  title: 'C Major, Op. 56 <span class="noDisplayMobile">Ludwig van<span/> Beethoven',
-  description: 'This piece is a variation of the aforementioned "Triple Concerto", a fourth soloist is added in the ensemble.',
-},
-{
-  icon: './assets/program/whiteNoteIcon.png',
-  title: 'Op. 3, No. 2 <span class="noDisplayMobile" >George Frideric<span/> Handel',
-  description: 'A notable Baroque concerto featuring a dialogue between a group of soloists, two violins and a cello, and the string orchestra.',
-},
-{
-  icon: './assets/program/whiteNoteIcon.png',
-  title: 'Op. 92 <span class="noDisplayMobile">Ludwig van<span/> Beethoven.',
-  description: ' This dynamic and emotionally charged masterpiece showcases Beethoven\'s genius and enduring musical legacy.',
-},
-];
-
 function createMusicianCard(artist) {
   const cardsDiv = document.querySelector('#musiciansCardsGroup');
   const musicianCard = document.createElement('article');
@@ -97,18 +107,6 @@ function createMusicianCard(artist) {
   }
   cardsDiv.appendChild(musicianCard);
 }
-function createMusicCard(concert) {
-  const musicProgram = document.querySelector('#musicProgram');
-  const concertArticle = document.createElement('article');
-  concertArticle.classList.add('music');
-  concertArticle.innerHTML = `
-  <img class="concertIcon" src="${concert.icon}" alt="">
-  <h4 class="concertName">${concert.title}</h4>
-  <p class="concertDescription">${concert.description}</p>
-  `;
-  musicProgram.appendChild(concertArticle);
-}
-window.onload = concerts.forEach(createMusicCard);
 window.onload = musicians.forEach(createMusicianCard);
 let state = 'more';
 function showMoreCards() {
